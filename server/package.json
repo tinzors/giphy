@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon src/index.js --exec babel-node --presets es2015",
+    "prd": "NODE_ENV=prd node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "boom": "^7.2.0",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "guid": "0.0.12",
+    "lodash": "^4.17.5",
+    "mongodb": "^3.0.3",
+    "mongojs": "^2.5.0",
+    "nodemailer": "^4.6.1",
+    "promised-mongo": "^1.2.0",
+    "sendgrid": "^5.2.3"
+  }
+}

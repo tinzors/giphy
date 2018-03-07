@@ -1,0 +1,27 @@
+{
+    "APP_PORT": "3000",
+    "STATIC_FILES": "../client/dist/",
+    "mongodb": {
+        "dbName": "giphy-funzors",
+        "connectionString": "mongodb://tinzors123:abc12345@ds153958.mlab.com:53958/giphy-funzors",
+        "collections": [
+            "Users"
+        ]
+    },
+    "email": {
+        "auth": {
+            "user": "giphyfun123@gmail.com",
+            "pass": "1f9035acdc",
+            "from": "jtn1490@gmail.com"
+        }
+    },
+    "JWT_KEY": {
+        "KEY": "starwars",
+        "EXPIRATION": 100440
+    },
+    "GIPHY": {
+        "API_KEY": "u34uy9Bh1FQKKAXSL8TFdhw9o6YHEjYC",
+        "GIPHY_LIMIT": 16
+    },
+    "UNGUARDED_ROUTES": ["/api/login", "/api/signup", "/api/checkLoggedIn"]
+}
