@@ -38,7 +38,7 @@ const actions = {
             method: "post",
             data: userCtx
         }
-        return request.callInternal(opts).then(results => {
+        return request.callExternal(opts).then(results => {
             localStorage.setItem('x-access-token', results.data['x-access-token'])
             localStorage.setItem('GIPHY_KEY', results.data['GIPHY_KEY'])
             localStorage.setItem('GIPHY_LIMIT', results.data['GIPHY_LIMIT'])

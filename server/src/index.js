@@ -7,15 +7,11 @@ import fs from 'fs'
 import config from '../config.json'
 import routes from './routes/route-manifest'
 import appRoot from 'app-root-path'
-import morgan from 'morgan'
 import authentication from './utils/authentication'
 
 let app = express()
 let APP_PORT = config.APP_PORT
 let STATIC_FILES = config.STATIC_FILES
-
-// Logging
-app.use(morgan('combined'))
 
 // CORS
 app.use(cors())
@@ -26,7 +22,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 
-// Serve static files 
+// Serve static files
 app.use(express.static(STATIC_FILES))
 
 // Routes

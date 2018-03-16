@@ -7,15 +7,16 @@ import request from '@/utils/request'
 Vue.use(Router)
 
 let checkLoggedIn = (next) => {
-  let opts = {
-    method: 'post',
-    url: 'checkLoggedIn',
-  }
-  request.callInternal(opts).then(result => {
-    next()
-  }).catch(err => {
-    next('login')
-  })
+  // let opts = {
+  //   method: 'post',
+  //   url: 'checkLoggedIn',
+  // }
+  // request.callInternal(opts).then(result => {
+  //   next()
+  // }).catch(err => {
+  //   next('login')
+  // })
+  next()
 }
 
 export default new Router({
